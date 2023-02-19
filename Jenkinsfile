@@ -1,6 +1,6 @@
 pipeline{
     agent any
-
+    checkout scm
     parameters {
 
         string(name: 'CLIENT_NAME', defaultValue: '', description: 'Client Name')
@@ -8,7 +8,7 @@ pipeline{
         string(name: 'RUN_TYPE', defaultValue: 'plan', description: 'Terraform Run Type. For example "plan" or "apply".')
         string(name: 'ENVIRONMENT', defaultValue: 'prod', description: 'This could be dev, sit, uat or prod')
         string(name: 'DEPLOYMENT_REGION', defaultValue: 'us-east-1', description: 'Region')
-        booleanParam(name: 'USERINPUT', defaultValue: false, description: 'Deploy User Input for terraform')
+        booleanParam(name: 'USERINPUT', defaultValue: true, description: 'Deploy User Input for terraform')
         booleanParam(name: 'VPC', defaultValue: false, description: 'Whether to manage customer vpc')
         booleanParam(name: 'KMS', defaultValue: false, description: 'Whether to manage customer managed key')
         booleanParam(name: 'KEY_PAIR', defaultValue: false, description: 'Whether to manage key pair')
