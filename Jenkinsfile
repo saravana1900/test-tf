@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    checkout scm
+    
     parameters {
 
         string(name: 'CLIENT_NAME', defaultValue: '', description: 'Client Name')
