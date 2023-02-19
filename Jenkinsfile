@@ -34,10 +34,7 @@ pipeline{
                           echo " Environment is       :  $ENVIRONMENT"
                           echo " VPC is               :  $VPC_RANGE"
                           echo " Deployment Region is :  $DEPLOYMENT_REGION"
-                          echo " Client is            : $CLIENT_NAME"
-                       
-             		
-                        
+                          echo " Client is            : $CLIENT_NAME"   
            		    }
             }
         }
