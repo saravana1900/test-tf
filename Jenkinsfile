@@ -35,6 +35,7 @@ pipeline{
                           echo " VPC is               :  $VPC_RANGE"
                           echo " Deployment Region is :  $DEPLOYMENT_REGION"
                           echo " Client is            : $CLIENT_NAME"   
+                          echo " User Input           : $USERINPUT"
            		    }
             }
         }
