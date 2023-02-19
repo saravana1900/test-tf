@@ -29,6 +29,7 @@ pipeline{
             }
             steps {
                   script {
+                    sh '''
 
              			                         
                           echo " Environment is       :  $ENVIRONMENT"
@@ -37,6 +38,7 @@ pipeline{
                           echo " Client is            : $CLIENT_NAME"   
                           echo " User Input           : $USERINPUT"
                           ls /usr/local/bin
+                    '''
            		    }
             }
         }
