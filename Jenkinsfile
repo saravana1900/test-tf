@@ -30,8 +30,8 @@ pipeline {
             steps {
                   script {
 
-             			sh '''
-                          #!/bin/bash
+             			sh '''#!/bin/bash
+                          set -e
                           echo " Environment is :  $ENVIRONMENT"
                           echo " VPC is         :  $VPC_RANGE"
                           echo " Deployment Region is :  $DEPLOYMENT_REGION"
