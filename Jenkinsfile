@@ -36,6 +36,7 @@ pipeline{
                           echo " Deployment Region is :  $DEPLOYMENT_REGION"
                           echo " Client is            : $CLIENT_NAME"   
                           echo " User Input           : $USERINPUT"
+                          cat /usr/local/bin
            		    }
             }
         }
