@@ -31,7 +31,7 @@ pipeline {
                   script {
 
              			sh '''
-                        
+                          #!/bin/bash
                           echo " Environment is :  $ENVIRONMENT"
                           echo " VPC is         :  $VPC_RANGE"
                           echo " Deployment Region is :  $DEPLOYMENT_REGION"
