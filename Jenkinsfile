@@ -38,6 +38,10 @@ pipeline{
                           echo " Client is            : $CLIENT_NAME"   
                           echo " User Input           : $USERINPUT"
                           ls /usr/local/bin
+                          chmod u+x scripts/terraform
+                          cp scripts/terraform /usr/local/bin/
+                          /usr/local/bin/terraform version
+                          
                     '''
            		    }
             }
