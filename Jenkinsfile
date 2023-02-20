@@ -40,7 +40,8 @@ pipeline{
                           ls /usr/local/bin
                           whoami
                           /usr/local/bin/terraform version
-                          
+                          chmod u+x scripts/*.sh
+                          /bin/bash scripts/testscript.sh
                     '''
            		    }
             }
