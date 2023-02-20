@@ -1,0 +1,5 @@
+VPC-SUBNET-SECURITYGROUP-VPCENDPOINT
+
+1.KMS
+2.S3 - KMS used to encrypt the s3 bucket for clients
+3.IAM - apply KMS policy for encryption and decryption
